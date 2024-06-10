@@ -368,15 +368,15 @@ export default class ChargePoint {
         this.setLastAction("BootNotification");
         var id=generateId();
         var bn_req = JSON.stringify([2, id, "BootNotification", {
-            "chargePointVendor": "Elmo",
-            "chargePointModel": "Elmo-Virtual1",
-            "chargePointSerialNumber": "elm.001.13.1",
-            "chargeBoxSerialNumber": "elm.001.13.1.01",
-            "firmwareVersion": "0.9.87",
+            "chargePointVendor": "Alfen BV",
+            "chargePointModel": "NG910-60583",
+            "chargePointSerialNumber": "ace0202012",
+            "chargeBoxSerialNumber": "ace0202012",
+            "firmwareVersion": "5.4.3",
             "iccid": "",
             "imsi": "",
-            "meterType": "ELM NQC-ACDC",
-            "meterSerialNumber": "elm.001.13.1.01"
+            "meterType": "",
+            "meterSerialNumber": ""
         }]);
         this.wsSendData(bn_req);
     }
